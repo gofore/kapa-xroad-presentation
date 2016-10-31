@@ -1,0 +1,12 @@
+[
+  {
+    "koulutus": "ensim",
+    "materiaali": [
+      { "linkki": "linkki", "name": "name", "meta": "metaa" }
+    ]
+  }, {
+    "koulutus": "toinen",
+    "materiaalia": []
+  }
+
+]
