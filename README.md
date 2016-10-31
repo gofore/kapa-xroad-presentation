@@ -20,6 +20,12 @@ If Python 3.x: `python -m http.server`
 
 ## Creating new presentation
 
+Run script `sh create-new-presentation.sh [presentation-name]`
 
+If you add any images to presentation, put them in image folder under koulutukset. That way they can be used in different presentations.
 
 ## Changing images
+
+When updating image, that image can be used in different presentations, so please don't break others :)
+
+But you can update one image which is in all presentations by keeping same name for new image as old image had. That way all presentations will be updated same time.
