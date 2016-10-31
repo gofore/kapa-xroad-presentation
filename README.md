@@ -24,6 +24,13 @@ Run script `sh create-new-presentation.sh [presentation-name]`
 
 If you add any images to presentation, put them in image folder under koulutukset. That way they can be used in different presentations.
 
+Add new presentation to root folder index page as a link.
+
+```html
+<li><a href="path/to/index.html">NIMI</a><br />Lisätietoa</li>
+```
+
+
 ## Changing images
 
 When updating image, that image can be used in different presentations, so please don't break others :)
