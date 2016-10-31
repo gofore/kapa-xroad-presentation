@@ -20,21 +20,6 @@ If Python 3.x: `python -m http.server`
 
 ## Creating new presentation
 
-1. Add new folder under koulutukset
 
-`mkdir newFolder`
-
-`cd newFolder`
-
-2. Copy index.html, presentation.css from koulutukset to newly created folder
-```bash
-cp ../index.html ./
-cp ../presentation.css ./
-```
-3. Create new presentation.md file for presentation
-```bash
-touch presentation.md
-```
-4. Write presentation
 
 ## Changing images

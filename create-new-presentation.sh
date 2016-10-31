@@ -11,5 +11,3 @@ cd koulutukset/$1
 cp ../index.html ./
 cp ../presentation.css ./
 touch presentation.md
-git add koulutukset/$1
-git commit -m  "Created new presentation $1, initial commit"
