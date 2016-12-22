@@ -1,22 +1,30 @@
 class: middle, center
 
-# Liityntäpalvelimen admin-toimintoja
+# Liityntäpalvelimen ylläpito
 
 ---
+
 # Sisältö
 
-* Backup / Restore
-* Diagnostiikka
+* Palomuurit ja portit
+* Valvonta ja prosessit
 * Levytilan vapauttaminen
-* Palomuurit, portit
-* Valvonta, prosessit
-* PIN-koodi syöttäminen
-* Konfiguraatioparameterit
+    * viestilokitus
+    * tekstilokitus
+* Konfiguraatioparametrit
 
 ---
-# Backup/Restore
 
-* Tallentaa liityntäpalvelimen konfiguraattion, myös avaimet ja varmenteet
-![medium-image](images/securityserver-backup-restore.png)
+# Ylläpitotoiminnoista yleisesti
 
+* Liityntäpalvelimen valvonta on suositeltavaa, jotta järjestelmä pysyy stabiilina ja käyttökunnossa
+* Liityntäpalvelinohjelmistosta julkaistaan uusia versioita ~2-3 kpl/vuosi sisältäen:
+    * Suorituskykyparannuksia
+    * Tietoturvapäivityksiä
+    * Uusia käyttöä tukevia toiminnallisuuksia  
+
+* Levytilan valvonta on tärkeää, mikä kannattaa kiinnittää huomiota jo asennusvaiheessa
+    * Levytila täyttyy jos arkistoituja tietoja ei siirretä talteen tai poisteta
+    * Käyttäjämäärät ratkaisevia mm. levytilan ja alustakoneen (tai koneiden) valinnassa. 
+  
 ---
