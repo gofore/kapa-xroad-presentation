@@ -22,7 +22,7 @@ class: middle, center
     * Näillä tiedoilla liityntäpalvelin pystyy hakemaan kaikille yhteisen keskuskonfiguraation, 
 ja saa tiedon siitä mitä muita liityntä- ja keskuspalvelimia on olemassa.
 
-.center[![small-image](images/konfiguraatioankkuri.png)]
+.center[![small-image](../images/konfiguraatioankkuri.png)]
 
 ---
 
@@ -34,7 +34,7 @@ PIN-koodin palauttaminen ei ole mahdollista.
 * Koodin syöttäminen vaaditaan aina palvelimen uudelleenkäynnistyksen jälkeen 
     * Ilman koodin aktivointia sanomaliikenne ei ole mahdollista
     
-.center[![small-image](images/pin-koodi.png)]
+.center[![small-image](../images/pin-koodi.png)]
 
 ---
 
@@ -44,7 +44,7 @@ PIN-koodin palauttaminen ei ole mahdollista.
     * Varmenteiden allekirjoituspyyntöjen luonti 
     * Allekirjoitettujen varmenteiden asettaminen (import)
     
-.center[![medium-image](images/varmenteet.png)]
+.center[![medium-image](../images/varmenteet.png)]
 
 ---
 
@@ -52,7 +52,7 @@ PIN-koodin palauttaminen ei ole mahdollista.
 
 * Tallentaa liityntäpalvelimen konfiguraation, sisältäen avaimet ja varmenteet
 
-.center[![medium-image](images/backup-restore.png)]
+.center[![medium-image](../images/backup-restore.png)]
 
 ---
 
@@ -62,4 +62,4 @@ PIN-koodin palauttaminen ei ole mahdollista.
     * TLS:n käyttö määritellään WSDL-rajapinnan lisäämisen yhtedessä
 * Security Server Certificate -kohdasta voidaan hakea liityntäpalvelimen oma palvelinvarmenne 
 
-.center[![small-image](images/internal-certificates.png)]
+.center[![small-image](../images/internal-certificates.png)]
