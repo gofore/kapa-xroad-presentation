@@ -55,6 +55,19 @@ PIN-koodin palauttaminen ei ole mahdollista.
 .center[![medium-image](../images/backup-restore.png)]
 
 ---
+# Diagnostiikka
+
+* Diagnostics-välilehti kertoo nopeasti keskuskonfiguraation, aikaleimapalvelun ja OSCP-hakujen tilan katsomatta 
+tarkemmin liityntäpalvelimen lokitiedostoista
+ 
+    * Punainen väri: Yhteyttä ei ole / haku epäonnistunut  
+    * Keltainen väri: Yhteydenavausta tai hakua ei olla ehditty vielä tekemään
+    * Vihreä: Yhteydet toimii / haut onnistuivat
+
+
+.center[![small-image](../images/diagnostics.png)]
+
+---
 
 # Yhteyksien hallinta
 

@@ -1,16 +1,14 @@
 class: middle, center
 
-# Liityntäpalvelimen ylläpito
+# Liityntäpalvelimen ylläpito ja valvonta
 
 ---
 
 # Sisältö
 
 * Palomuurit ja portit
-* Valvonta ja prosessit
+* Prosessit
 * Levytilan vapauttaminen
-    * viestilokitus
-    * tekstilokitus
 * Konfiguraatioparametrit
 
 ---
@@ -28,3 +26,36 @@ class: middle, center
     * Käyttäjämäärät ratkaisevia mm. levytilan ja alustakoneen (tai koneiden) valinnassa. 
   
 ---
+
+# Liityntäpalvelimen prosessit
+
+* KUVA TÄHÄN
+
+* Lokeihin kirjoitettavaa dataa voidaan säätää eritasoiseksi, esim. DEBUG, INFO ja OFF.
+
+---
+
+# Portit
+
+* KUVA TÄHÄN
+
+---
+
+# Levytila
+
+* Kaikki viestit (header aina, ja body konfiguroituna), sekä niiden tiivisteet ja allekirjoitukset tallentuvat paikalliseen 
+tietokantaan jälkikäteistä todennusta varten.
+* Kannasta niitä puretaan zip-tiedostoihin ajastetusti /var/lib/xroad -hakemistoon
+* Zip-tiedostot täyttävät levyn, ellei niitä siirretä muualle tai poisteta
+* Liitetiedostot tallentuvat väliaikaisesti liityntäpalvelimen levylle
+    * Levytila asettaa maksimin käsiteltävien liitteiden koolle
+
+---
+
+# Konfiguraatioparametrit
+
+* Parametreilla voidaan säätää esimerkiksi käytettyjä tallennushakemistoja ja ajastuksia mm. messagelogien purkamiseen kannasta
+    * Parametrien säätö tehdään ”käsin” konsolin kautta tiedostoa muokkaamalla, ei käyttöliittymän kautta.
+* Oletusarvoisesti parametrit ovat hakemistossa /etc/xroad/conf.d
+    * Paikalliset muutokset tehdään local.ini -tiedostoon, joka ylikirjoittaa oletusasetukset  
+

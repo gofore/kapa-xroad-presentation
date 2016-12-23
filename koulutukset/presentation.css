@@ -42,3 +42,13 @@ h1 {
 }
 
 .remark-code-line:empty {display: none;}
+
+img[alt=small-image] {
+    height: 50%;
+    width: 50%;
+}
+
+img[alt=medium-image] {
+    height: 75%;
+    width: 75%;
+}
