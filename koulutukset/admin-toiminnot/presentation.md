@@ -6,8 +6,8 @@ class: middle, center
 
 # Sisältö
 
-* Palomuurit ja portit
 * Prosessit
+* Portit
 * Levytilan vapauttaminen
 * Konfiguraatioparametrit
 
