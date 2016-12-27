@@ -52,3 +52,11 @@ img[alt=medium-image] {
     height: 75%;
     width: 75%;
 }
+
+align-right {
+  float: right;
+}
+
+align-left {
+  float: left;
+}
