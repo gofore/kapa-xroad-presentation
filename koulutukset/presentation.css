@@ -19,18 +19,18 @@
 }
 
 body {
-    color: white;
+    color: #FFFFFF;
     font-family: 'Droid Serif';
 }
 
 h1, h2, h3, a {
     font-family: 'Yanone Kaffeesatz';
     font-weight: normal;
-    color: white;
+    color: #FFFFFF;
 }
 
 a {
-    color: white;
+    color: #FFFFFF;
 }
 
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
@@ -93,8 +93,13 @@ body img {
 
 
 .remark-slide-content, .remark-container {
-   color: white;
-   background-color: #3366ff;
+   color: #FFFFFF;
+   background-color: #003479;
+}
+
+.kanerva {
+   color: #282828;
+   background-color: #9F60B5;
 }
 
 .remark-slide-scaler {

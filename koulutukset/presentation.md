@@ -2,12 +2,14 @@ class: middle, center
 # Tämä on aloitus dia, sen sisältö on keskitetty
 
 ---
-
+class: kanerva
 # Dian vaihto Remarkjs:ssä
 
 Kirjoittamalla markdown tiedostoon '---' aloitetaan uusi dia.
 
 Kirjoittamalla tiedostoon '???' aloitetaan dian komentti osia. Komentti osia ei ole pakollinen
+
+Tässä diass on käytetty ```class: kanerva```, joka muuttaa tekstin värin mustaksi ja taustan palveluväylän väriseksi.
 
 ---
 name: esimerkki
