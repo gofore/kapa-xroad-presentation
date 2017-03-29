@@ -8,6 +8,5 @@ fi
 
 mkdir koulutukset/$1
 cd koulutukset/$1
-cp ../index.html ./
-cp ../presentation.css ./
+cp ../template-index.html ./index.html
 touch presentation.md
