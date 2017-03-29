@@ -1,4 +1,4 @@
-class: middle, center
+class: middle, center, sininen
 # Tämä on aloitus dia, sen sisältö on keskitetty
 
 ---
@@ -9,7 +9,7 @@ Kirjoittamalla markdown tiedostoon '---' aloitetaan uusi dia.
 
 Kirjoittamalla tiedostoon '???' aloitetaan dian komentti osia. Komentti osia ei ole pakollinen
 
-Tässä diass on käytetty ```class: kanerva```, joka muuttaa tekstin värin mustaksi ja taustan palveluväylän väriseksi.
+Tässä diass on käytetty `class: kanerva`, joka muuttaa tekstin värin mustaksi ja taustan palveluväylän väriseksi. Kaikkien diojen pitää alkaa luokalla. Vaihtoehdot on: sininen, valkoinen tai kanerva
 
 ---
 name: esimerkki

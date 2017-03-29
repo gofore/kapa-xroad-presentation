@@ -18,28 +18,35 @@
   }
 }
 
+.sininen {
+   color: #FFFFFF;
+   background-color: #003479;
+}
+
+.kanerva {
+   color: #282828;
+   background-color: #9F60B5;
+}
+
+.valkoinen {
+   color: #282828;
+   background-color: #FFFFFF;
+}
+
 body {
-    color: #FFFFFF;
     font-family: 'Droid Serif';
 }
 
 h1, h2, h3, a {
     font-family: 'Yanone Kaffeesatz';
     font-weight: normal;
-    color: #FFFFFF;
 }
 
 a {
-    color: #FFFFFF;
 }
 
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
-.logo-container {
-    width: 100%;
-    bottom: 2rem;
-    position: absolute;
-}
 
 img[alt=full-pic] {
     height: auto;
@@ -61,18 +68,21 @@ img[alt=borderless-pic] {
     border: none;
 }
 
+.logo-container {
+    width: 100%;
+    top: 1%;
+    left: 1%;
+    position: absolute;
+}
+
 .logo {
     position: relative;
-    left: -3rem;
-    width: 908px;
-    margin: auto;
     height: 4rem;
-    opacity: 0.5;
     z-index: 100;
 }
 
-.logo--gofore {
-    background: url('gofore-logo.svg');
+.logo--suomi {
+    background: url('suomifi_palveluvayla_logo_RGB.svg');
     background-repeat: no-repeat;
 }
 
@@ -93,13 +103,6 @@ body img {
 
 
 .remark-slide-content, .remark-container {
-   color: #FFFFFF;
-   background-color: #003479;
-}
-
-.kanerva {
-   color: #282828;
-   background-color: #9F60B5;
 }
 
 .remark-slide-scaler {
