@@ -96,8 +96,8 @@ body img {
 }
 
 .remark-slide-number {
-    bottom: 2rem;
-    right: 0rem;
+    bottom: 5%;
+    right: 5%;
     position: absolute;
 }
 
