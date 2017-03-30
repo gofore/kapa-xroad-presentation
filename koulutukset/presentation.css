@@ -21,16 +21,27 @@
 .sininen {
    color: #FFFFFF;
    background-color: #003479;
+   font-size: x-large;
 }
 
 .kanerva {
    color: #282828;
    background-color: #9F60B5;
+   font-size: x-large;
 }
 
 .valkoinen {
    color: #282828;
    background-color: #FFFFFF;
+   font-size: x-large;
+}
+
+li {
+   margin-bottom: 0.5em;
+}
+
+ul {
+   margin-bottom: 0.5em;
 }
 
 body {
@@ -44,6 +55,7 @@ h1, h2, h3, a {
 
 a {
    color: lightblue;
+   font-family: 'Driod Serif';
 }
 
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
@@ -108,10 +120,6 @@ body img {
 
 .remark-slide-scaler {
     box-shadow: none;
-}
-
-a, a:visited, a:active, a:hover {
-  text-decoration: none;
 }
 
 .remark-code-line:empty {display: none;}
