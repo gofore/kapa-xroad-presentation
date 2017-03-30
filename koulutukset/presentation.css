@@ -43,6 +43,7 @@ h1, h2, h3, a {
 }
 
 a {
+   color: lightblue;
 }
 
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
