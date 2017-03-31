@@ -16,7 +16,7 @@ class: sininen
 * Kutsuja tietää, että käyttää useaa liityntäpalvelinta
 
 ## Ulkoinen kuormantasaus
-* Tulossa Q2/2017
+* Tulossa Q2/2017 (pilottikäyttö alkamassa lähiaikoina)
 * Kutsuja kuvittelee käyttävänsä yhtä liityntäpalvelinta
 
 
@@ -53,8 +53,8 @@ yleensä nopein vastaamaan pyyntöihin ("lyhyimmät piuhat")
 class: sininen
 # Sisäänrakennettu HA-tuki: muutoksia
 * Versiossa 6.7.13 parannettiin toimintaa luotettavammaksi (verkko)virhetilanteissa
-* Versiossa 6.9 parannetaan yhteysavausten nopeutta ja luotettavuutta, ja lisätään konfiguraatio-optioita
-* H2/2017 tullaan toteuttamaan parannuksia, jotka mm. mahdollisesti korjaavat edellisellä kalvolla mainitun ongelman
+* Versiossa 6.9 parannetaan yhteysavausten nopeutta ja luotettavuutta, nopeutetaan toipumista verkko-ongelmista, ja parannetaan konfiguroitavuutta
+* H2/2017 tulossa parannuksia, joilla mahdollisesti saadaan sisäänrakennettu HA myös jakamaan kuormaa tehokkaammin 
 
 ---
 class: sininen
@@ -95,4 +95,3 @@ class: sininen
 * Konfigurointi tehdään master nodelle
 * Konfiguraatiomuutokset päivittyvät master -> slavet viiveellä
    * -> klusteri hetken epäkonsistentti
----
