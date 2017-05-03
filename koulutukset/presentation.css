@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 @page {
   size: 1024px 768px;
@@ -23,7 +22,7 @@
 }
 
 .sininen-palkki {
-   background: linear-gradient(to bottom, #003479, #003479 22%, #FFFFFF 22%);
+   background: linear-gradient(to bottom, #003479, #003479 6em, #FFFFFF 6em);
    color: #282828;
    font-size: x-large;
 }
@@ -62,6 +61,13 @@ a {
 
 .remark-code, .remark-inline-code { font-family: 'Source Sans Pro', sans-serif; }
 
+img[alt=logo] {
+   height: 10%;
+   position: absolute;
+   top: -1px;
+   left: -1px;
+   border: none;
+}
 
 img[alt=full-pic] {
     height: auto;
@@ -83,31 +89,12 @@ img[alt=borderless-pic] {
     border: none;
 }
 
-.logo-container {
-    width: 100%;
-    top: 1%;
-    left: 1%;
-    position: absolute;
-}
-
-.logo {
-    position: relative;
-    height: 4rem;
-    z-index: 100;
-}
-
-.logo--suomi {
-    background: url('suomifi_palveluvayla_logo_RGB.svg');
-    background-repeat: no-repeat;
-}
-
 .footnote {
     font-size: 50%;
 }
 
 body img {
     max-width: 100%;
-    border: 1px solid #ccc;
 }
 
 .remark-slide-number {
@@ -118,6 +105,7 @@ body img {
 
 
 .remark-slide-content, .remark-container {
+   overflow: scroll;
 }
 
 .remark-slide-scaler {
