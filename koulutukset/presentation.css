@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 @page {
   size: 1024px 768px;
@@ -24,10 +22,14 @@
    font-size: x-large;
 }
 
-.kanerva {
-   color: #282828;
-   background-color: #9F60B5;
+.sininen-palkki {
+   background: linear-gradient(to bottom, #003479, #003479 22%, #FFFFFF 22%);
+   color: #FFFFFF;
    font-size: x-large;
+}
+
+.sininen-palkki>p {
+   color: #282828;
 }
 
 .valkoinen {
@@ -45,20 +47,20 @@ ul {
 }
 
 body {
-    font-family: 'Droid Serif';
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h2, h3, a {
-    font-family: 'Yanone Kaffeesatz';
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
 }
 
 a {
    color: lightblue;
-   font-family: 'Driod Serif';
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.remark-code, .remark-inline-code { font-family: 'Source Sans Pro', sans-serif; }
 
 
 img[alt=full-pic] {

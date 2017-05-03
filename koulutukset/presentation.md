@@ -2,7 +2,7 @@ class: middle, center, sininen
 # Tämä on aloitus dia, sen sisältö on keskitetty
 
 ---
-class: kanerva
+class: sininen-palkki
 # Dian vaihto Remarkjs:ssä
 
 Kirjoittamalla markdown tiedostoon '---' aloitetaan uusi dia.
