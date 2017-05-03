@@ -103,10 +103,7 @@ body img {
     position: absolute;
 }
 
-
-.remark-slide-content, .remark-container {
-   overflow: scroll;
-}
+.remark-slide-content, .remark-container { }
 
 .remark-slide-scaler {
     box-shadow: none;
