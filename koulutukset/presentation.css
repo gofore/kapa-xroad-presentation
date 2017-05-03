@@ -24,12 +24,12 @@
 
 .sininen-palkki {
    background: linear-gradient(to bottom, #003479, #003479 22%, #FFFFFF 22%);
-   color: #FFFFFF;
+   color: #282828;
    font-size: x-large;
 }
 
-.sininen-palkki>p {
-   color: #282828;
+.sininen-palkki>h1 {
+   color: #FFFFFF;
 }
 
 .valkoinen {
