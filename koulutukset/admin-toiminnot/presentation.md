@@ -1,8 +1,30 @@
-class: middle, center
+layout: true
+name: sininen-palkki
+class: sininen-palkki
+![logo](/suomifi_logo.svg)
+
+---
+layout: true
+name: header
+class: center, middle, sininen
+![logo](/suomifi_logo.svg)
+
+---
+layout: true
+name: valkoinen
+class: valkoinen
+![logo](/suomifi_logo.svg)
+
+<!--DON'T TOUCH ABOVE THIS !!!!!! -->
+---
+
+template: header
 
 # Liityntäpalvelimen ylläpito ja valvonta
 
 ---
+
+template: sininen-palkki
 
 # Sisältö
 
@@ -12,6 +34,8 @@ class: middle, center
 * Konfiguraatioparametrit
 
 ---
+
+template: sininen-palkki
 
 # Ylläpitotoiminnoista yleisesti
 
@@ -23,9 +47,11 @@ class: middle, center
 
 * Levytilan valvonta on tärkeää, mikä kannattaa kiinnittää huomiota jo asennusvaiheessa
     * Levytila täyttyy jos arkistoituja tietoja ei siirretä talteen tai poisteta
-    * Käyttäjämäärät ratkaisevia mm. levytilan ja alustakoneen (tai koneiden) valinnassa. 
-  
+    * Käyttäjämäärät ratkaisevia mm. levytilan ja alustakoneen (tai koneiden) valinnassa.
+
 ---
+
+template: sininen-palkki
 
 # Liityntäpalvelimen prosessit
 
@@ -35,15 +61,19 @@ class: middle, center
 
 ---
 
+template: sininen-palkki
+
 # Portit
 
 * KUVA TÄHÄN
 
 ---
 
+template: sininen-palkki
+
 # Levytila
 
-* Kaikki viestit (header aina, ja body konfiguroituna), sekä niiden tiivisteet ja allekirjoitukset tallentuvat paikalliseen 
+* Kaikki viestit (header aina, ja body konfiguroituna), sekä niiden tiivisteet ja allekirjoitukset tallentuvat paikalliseen
 tietokantaan jälkikäteistä todennusta varten.
 * Kannasta niitä puretaan zip-tiedostoihin ajastetusti /var/lib/xroad -hakemistoon
 * Zip-tiedostot täyttävät levyn, ellei niitä siirretä muualle tai poisteta
@@ -52,10 +82,11 @@ tietokantaan jälkikäteistä todennusta varten.
 
 ---
 
+template: sininen-palkki
+
 # Konfiguraatioparametrit
 
 * Parametreilla voidaan säätää esimerkiksi käytettyjä tallennushakemistoja ja ajastuksia mm. messagelogien purkamiseen kannasta
     * Parametrien säätö tehdään ”käsin” konsolin kautta tiedostoa muokkaamalla, ei käyttöliittymän kautta.
 * Oletusarvoisesti parametrit ovat hakemistossa /etc/xroad/conf.d
     * Paikalliset muutokset tehdään local.ini -tiedostoon, joka ylikirjoittaa oletusasetukset  
-

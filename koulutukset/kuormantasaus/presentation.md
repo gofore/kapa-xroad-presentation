@@ -1,18 +1,46 @@
-class: sininen
+layout: true
+name: sininen-palkki
+class: sininen-palkki
+![logo](/suomifi_logo.svg)
+
+---
+layout: true
+name: header
+class: center, middle, sininen
+![logo](/suomifi_logo.svg)
+
+---
+layout: true
+name: valkoinen
+class: valkoinen
+![logo](/suomifi_logo.svg)
+
+<!--DON'T TOUCH ABOVE THIS !!!!!! -->
+---
+
+template: header
+
 # Kuormantasaus
 
+---
+
+template: sininen-palkki
+
+# Agenda:
 * Mitä haetaan?
    * Korkea saatavuus (HA) ✓
-   * Suorituskyky 
-   
+   * Suorituskyky
+
 Aiheena palvelun*tarjoajan* kuormantasaus
 
 ✓ = saatavilla tällä hetkellä
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Kaksi tapaa
 ## Sisäinen kuormantasaus
-* Saatavilla 
+* Saatavilla
 * Kutsuja tietää, että käyttää useaa liityntäpalvelinta
 
 ## Ulkoinen kuormantasaus
@@ -21,9 +49,11 @@ class: sininen
 
 
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Sisäänrakennettu HA-tuki
- 
+
 * X-Roadissa on sisäänrakennettuna yksinkertainen korkean saatavuuden mekanismi
 * Jos sama palvelu* on rekisteröity usealle liityntäpalvelimelle, käytetään sitä liityntäpalvelinta joka vastaa nopeiten
 
@@ -31,40 +61,49 @@ class: sininen
 
 .center[![small-image](../images/internal-load-balancer.png)]
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Sisäänrakennettu HA-tuki
- 
+
 * Jos tämä liityntäpalvelin lakkaa vastaamasta pyyntöihin, aletaan kutsua seuraavaksi nopeimmin vastaavaa
 * Ratkaisu siis auttaa saavuttamaan korkean saatavuuden (HA)
 
 .center[![small-image](../images/internal-load-balancer.png)]
 
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Sisäänrakennettu HA-tuki: ongelma
- 
-* Jos tällaiseen klusteriin kuuluu liityntäpalvelimet SS1, SS2, SS3, jokin niistä on 
+
+* Jos tällaiseen klusteriin kuuluu liityntäpalvelimet SS1, SS2, SS3, jokin niistä on
 yleensä nopein vastaamaan pyyntöihin ("lyhyimmät piuhat")
 * Yksi klusterin nodeista vastaa kaikkiin pyyntöihin, toiset laiskottelevat
 * Ei ole juuri hyödyksi suorituskyvyn suhteen
 
 ---
 
-class: sininen
+template: sininen-palkki
+
 # Sisäänrakennettu HA-tuki: muutoksia
 * Versiossa 6.7.13 parannettiin toimintaa luotettavammaksi (verkko)virhetilanteissa
 * Versiossa 6.9 parannetaan yhteysavausten nopeutta ja luotettavuutta, nopeutetaan toipumista verkko-ongelmista, ja parannetaan konfiguroitavuutta
-* H2/2017 tulossa parannuksia, joilla mahdollisesti saadaan sisäänrakennettu HA myös jakamaan kuormaa tehokkaammin 
+* H2/2017 tulossa parannuksia, joilla mahdollisesti saadaan sisäänrakennettu HA myös jakamaan kuormaa tehokkaammin
 
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Ulkoinen kuormantasaus
 # Toimintaperiaate
 ![image](../images/external-load-balancer.png)
 
 ---
-class: sininen
-## Toimintaperiaate
+
+template: sininen-palkki
+
+# Toimintaperiaate
 * Klusteriin kuuluu n kappaletta nodeja
 * Kaikki palvelevat aktiivisesti asiakkaita (ei hot standby)
 * Ulkomaailma näkee nämä yhtenä nodena
@@ -72,7 +111,9 @@ class: sininen
 * Väylässä on siis virallisesti yksi liityntäpalvelin, ja epäviralliset slave nodet teeskentelevät olevansa se
 
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Tekninen toteutus
 * Konfiguraatiotietokanta on klusteroitu
   * PostgreSQL streaming replication (hot standby)
@@ -84,9 +125,11 @@ class: sininen
   * Tai ei ole ollenkaan käyttöliittymää
 * Healthcheck
 * XRoad-sovellukseen on tehty muutoksia jotka mahdollistavat klusteroinnin
- 
+
 ---
-class: sininen
+
+template: sininen-palkki
+
 # Ulkoisen klusteroinnin käyttöönotto
 * Asennus
    * Ansible
