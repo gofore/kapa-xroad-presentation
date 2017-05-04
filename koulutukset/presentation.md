@@ -1,4 +1,24 @@
-class: middle, center, sininen
+layout: true
+name: sininen-palkki
+class: sininen-palkki
+![logo](../suomifi_logo.svg)
+
+---
+layout: true
+name: header
+class: center, middle, sininen
+![logo](../suomifi_logo.svg)
+
+---
+layout: true
+name: valkoinen
+class: valkoinen
+![logo](../suomifi_logo.svg)
+
+<!--DON'T TOUCH ABOVE THIS !!!!!! -->
+
+---
+template: header
 # Tämä on aloitus dia, sen sisältö on keskitetty
 
 ---
@@ -12,9 +32,7 @@ Kirjoittamalla tiedostoon '???' aloitetaan dian komentti osia. Komentti osia ei 
 Tässä diass on käytetty `class: kanerva`, joka muuttaa tekstin värin mustaksi ja taustan palveluväylän väriseksi. Kaikkien diojen pitää alkaa luokalla. Vaihtoehdot on: sininen, valkoinen tai kanerva
 
 ---
-name: esimerkki
-class: ei-luokkaa, luokkia
-background-image: url(kuva.jpg)
+template: sininen-palkki
 
 # Dian attribuutit
 
@@ -24,6 +42,7 @@ background-image: url(kuva.jpg)
 * Layout ja templateista: [Remarkjs:n documentaatiossa](https://github.com/gnab/remark/wiki/Markdown#template)
 
 ---
+template: sininen-palkki
 
 # Rivin vaihto markdown:ssa
 
@@ -36,6 +55,7 @@ Jolloin rivin vaihto tapahtuu ilman tyhjää tilaa. Mutta yleensä tälle ei ole
 Myös rivin vaihto tapahtuu jättämällä Markdown tiedostoon yhden ylimääräisen tyhjän välin.
 
 ---
+template: sininen-palkki
 
 # Otsikot
 
@@ -54,6 +74,7 @@ Merkkien lukumäärä kertoo otsikon tason, mitä enemmän sitä pienempi (syvem
 ##### 6. Tason otsikko #######
 
 ---
+template: sininen-palkki
 
 # Listat
 
@@ -68,6 +89,7 @@ tai
 Listojen sisennys tapahtuu 2 välilyönnillä.
 
 ---
+template: sininen-palkki
 
 # Koko tekstin asettelu diassa
 
@@ -94,6 +116,7 @@ Myös on mahdollista asetella vain teksti palaa:
 ```
 
 ---
+template: sininen-palkki
 
 # Kuvan tai linkin lisääminen
 

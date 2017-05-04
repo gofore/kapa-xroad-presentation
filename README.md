@@ -27,7 +27,7 @@ If you add any images to presentation, put them in image folder under koulutukse
 Add new presentation to root folder index page as a link.
 
 ```html
-<li><a href="path/to/index.html">NIMI</a><br />Lisätietoa</li>
+<li><a href="koulutukset/{presentation-name}">NIMI</a><br />Lisätietoa</li>
 ```
 
 

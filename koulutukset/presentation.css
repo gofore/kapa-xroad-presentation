@@ -61,6 +61,29 @@ a {
 
 .remark-code, .remark-inline-code { font-family: 'Source Sans Pro', sans-serif; }
 
+.footnote {
+    font-size: 50%;
+}
+
+body img {
+    max-width: 100%;
+}
+
+.remark-slide-number {
+    bottom: 5%;
+    right: 5%;
+    position: absolute;
+}
+
+.remark-slide-content, .remark-container { }
+
+.remark-slide-scaler {
+    box-shadow: none;
+}
+
+.remark-code-line:empty {display: none;}
+
+/* HERE ARE IMAGE RULES*/
 img[alt=logo] {
    height: 10%;
    position: absolute;
@@ -88,25 +111,3 @@ img[alt=fuller-pic] {
 img[alt=borderless-pic] {
     border: none;
 }
-
-.footnote {
-    font-size: 50%;
-}
-
-body img {
-    max-width: 100%;
-}
-
-.remark-slide-number {
-    bottom: 5%;
-    right: 5%;
-    position: absolute;
-}
-
-.remark-slide-content, .remark-container { }
-
-.remark-slide-scaler {
-    box-shadow: none;
-}
-
-.remark-code-line:empty {display: none;}
