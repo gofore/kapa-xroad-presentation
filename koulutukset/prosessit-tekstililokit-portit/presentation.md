@@ -19,7 +19,7 @@ class: center, middle, sininen
 ---
 
 template: header
-# Prosessit, testililokit ja portit
+# Prosessit, tekstililokit ja portit
 
 ---
 
