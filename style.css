@@ -1,28 +1,21 @@
 body {
-  background-color: #3366ff;
-  color: white;
+  background-color: #003479;
+  color: #FFFFFF;
 }
 h1 {
-  color: white;
+  color: #FFFFFF;
   margin: 80px 0;
 }
 h2 {
-  color: white;
+  color: #FFFFFF;
   font-size: 20px;
 }
 .footer {
   opacity: 0.5;
   margin-top: 120px;
-  color: white;
+  color: #FFFFFF;
 }
 a:link {color:#f07e14;}
 a:visited {color:#f07e14;}
 a:hover {color:#f69e34;}
 a:active {color:#f69e34;}
-
-li {
-  padding: 3px 15px;
-  margin: 25px 0;
-  list-style: none;
-  background: #0040ff;
-}
