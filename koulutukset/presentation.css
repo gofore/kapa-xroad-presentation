@@ -59,6 +59,10 @@ a {
    font-family: 'Source Sans Pro', sans-serif;
 }
 
+pre {
+   white-space: pre-wrap;
+}
+
 .remark-code, .remark-inline-code { font-family: 'Source Sans Pro', sans-serif; }
 
 .footnote {
