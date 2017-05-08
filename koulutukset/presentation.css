@@ -99,6 +99,16 @@ thead {
    background-color: lightgrey;
 }
 
+.left-column {
+   float: left;
+   width: 39%;
+}
+
+.right-column{
+   float: right;
+   width: 59%;
+}
+
 /* HERE ARE IMAGE RULES*/
 img[alt=logo] {
    height: 10%;
