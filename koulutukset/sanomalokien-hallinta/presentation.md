@@ -24,16 +24,17 @@ template: header
 ---
 
 template: sininen-palkki
+class: split-40
 
 # Sanomien lokitus
 
-.left-column[
+.column[
 1. Sanomien otsikkotiedot, tiivisteet ja allekirjoitukset tallentuvat paikalliseen PostgreSQL-tietokantaan
    * SOAP body-osa oletuksena pois päältä
 2. Kannan viestit arkistoidaan zip-tiedostoon (var/lib/xroad) tietyin väliajoin
 3. Zip-tiedostoja kertyy levylle ajan mittaan ja ne tulee siirtää tai poistaa
 ]
-.right-column[![sanomienlokitus](../images/sanomienlokitus.png)]
+.column[![sanomienlokitus](../images/sanomienlokitus.png)]
 
 ---
 

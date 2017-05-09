@@ -1,0 +1,42 @@
+/* HERE ARE IMAGE RULES*/
+img[alt=logo] {
+   height: 10%;
+   position: absolute;
+   top: -1px;
+   left: -1px;
+   border: none;
+}
+
+img[alt=lipaportit-left] {
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   max-width: 49%;
+}
+
+img[alt=lipaportit-right] {
+   position: absolute;
+   bottom: 0%;
+   right: 0%;
+   max-width: 55%;
+}
+
+img[alt=full-pic] {
+    height: auto;
+    width: auto;
+    position: relative;
+    top: -25px;
+    max-width: 70%;
+}
+
+img[alt=fuller-pic] {
+    height: auto;
+    width: auto;
+    position: relative;
+    top: -25px;
+    max-width: 95%;
+}
+
+img[alt=borderless-pic] {
+    border: none;
+}

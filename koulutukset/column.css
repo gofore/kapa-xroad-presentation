@@ -1,0 +1,13 @@
+/* Column rules, columns are for floating in right place */
+/* DO NOT TOUCH */
+.column:first-of-type {float:left}
+.column:last-of-type {float:right}
+
+/* You can add more rules under this if needed. */
+/* Split-40 rule */
+.split-40 .column:first-of-type {width: 39%}
+.split-40 .column:last-of-type {width: 59%}
+
+/* Split-55 rule */
+.split-55 .column:first-of-type {width: 54%}
+.split-55 .column:last-of-type {width: 44%}
