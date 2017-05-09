@@ -42,7 +42,7 @@ template: sininen-palkki
 
 #  Liityntäpalvelimen levytila
 
-* Liityntäpalvelimella levytilaa tarvitsepääasiassa:
+* Liityntäpalvelimella levytilaa tarvitsevat pääasiassa:
    * Tekstilogit (`var/log/xroad`, ei siivota automaattisesti)
    * Tietokanta (`messagelog` -taulu, automaattisesti siivotaan oletuksena yli 30 päivää vanhat)
    * Arkistoidut sanomalokit (`/var/lib/xroad`, ei siivota automaattisesti)
@@ -72,7 +72,7 @@ template: sininen-palkki
 
 # Konfiguroitavia parametreja
 
-* Sanomalokiin liittyy monia parametreja, joiden käyttö kuvataan dokumentissa [Manuals/ug-syspar_x-road_v6_system_parameters.md](https://github.com/ria-ee/X-Road/blob/develop/doc/Manuals/ug-syspar_x-road_v6_system_parameters.md)
+* Sanomalokiin liittyy monia parametreja, joiden käyttö kuvataan dokumentissa [X-Road System parameters ](https://github.com/ria-ee/X-Road/blob/develop/doc/Manuals/ug-syspar_x-road_v6_system_parameters.md)
 * Alla muutama esimerkki
 
 |Parametri           |Oletusarvo          |Selite                             |

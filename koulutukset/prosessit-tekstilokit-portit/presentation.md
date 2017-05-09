@@ -19,7 +19,7 @@ class: center, middle, sininen
 ---
 
 template: header
-# Prosessit, tekstililokit ja portit
+# Prosessit, tekstilokit ja portit
 
 ---
 
@@ -30,7 +30,7 @@ template: sininen-palkki
 |:-------------------|:--------------------------------|:------------------------------------------|
 |xroad-confclient    |Keskuskonfiguraation hakeminen   | `/var/log/xroad/configuration_client.log` |
 |xroad-jetty (Ubuntu)<br>xroad-jetty9 (RHEL)|Käyttöliittymä |`/var/log/xroad/jetty/jetty.log`      |
-|xroad-proxy         |Viestin välitys                  |`/var/log/xroad/proxy.log`                 |
+|xroad-proxy         |Viestinvälitys                   |`/var/log/xroad/proxy.log`                 |
 |xroad-signer        |Avainten ja varmenteiden hallinta|`/var/log/xroad/signer.log`                |
 |nginx               |Edustapalvelin                   |`/var/log/nginx/`                          |
 |postgresql          |Tietokantapalvelin               |`/var/log/postgresql/`                     |

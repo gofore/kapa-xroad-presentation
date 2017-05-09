@@ -54,7 +54,7 @@ template: sininen-palkki
 
 # Proxy.log virheet
 
-- Erilaisia virhekoodeja on yli 100: ErrorCodes.java
+- Erilaisia virhekoodeja on yli 100: [ErrorCodes.java](https://github.com/vrk-kpa/X-Road/blob/develop/src/common-util/src/main/java/ee/ria/xroad/common/ErrorCodes.java)
 - Lokeihin tulostuvissa – ja vastausviestissä näkyvissä – virheissä voi näkyä virhekooditus, esimerkiksi Server.ClientProxy.NetworkError
 
 ```log
@@ -76,7 +76,6 @@ template: sininen-palkki
    * Server.ServerProxy
    * Signer
 * "NetworkError" - Error Code
-   *
 
 ---
 
