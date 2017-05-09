@@ -19,8 +19,17 @@ class: center, middle, sininen
 ---
 
 template: header
-# Aloitus dia
 
+# NOEXEC-lippu
+
+---
+
+template: sininen-palkki
+
+# /tmp ja NOEXEC
+
+- Mikäli /tmp sijaitsee tiedostojärjestelmässä joka on mountattu NOEXEC lippu päällä, admin käyttöliittymä ei toimi.
+![NOEXEC-lippu](../images/NOEXEC-lippu.png)
 ---
 template: header
 # Kysymyksiä?

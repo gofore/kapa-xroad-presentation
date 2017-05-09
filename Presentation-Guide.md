@@ -74,12 +74,29 @@ Example of slide with big image:
 ```
 
 ### Images
+ - All image CSS rules are in `koulutukset/image.css` -file.
  - Resizing pictures happens with css, you would probably need to create more rules for that if those what are now choices don't do. Here we use image -element's alt -attribute to identify pictures.
 
  And this is how you show images in markdown:
 ```markdown
    ![alt](/path/to/image.filetype)
 ```
+### Columns
+You can use columns also in presentation. This can be done by using this kinda syntax for example:
+```markdown
+   ---
+   template: sininen-palkki
+   class: split-40
+
+   # Tittle for slide
+
+   .column[ All what you want to shown in left column goes here. ]
+   .column[ All what you want to shown in right column goes here. ]
+
+```
+In above example `class:split-40` is css rule what is defined in ´koulutukset/column.css` -file and it will make first column to be 39% width and second column to be 59% width.
+
+You can add new split rules to `koulutukset/column.css` -file.
 
 ### Links
 Links are pretty simple. Just use syntax shown here.

@@ -59,6 +59,10 @@ a {
    font-family: 'Source Sans Pro', sans-serif;
 }
 
+pre {
+   white-space: pre-wrap;
+}
+
 .remark-code, .remark-inline-code { font-family: 'Source Sans Pro', sans-serif; }
 
 .footnote {
@@ -83,31 +87,18 @@ body img {
 
 .remark-code-line:empty {display: none;}
 
-/* HERE ARE IMAGE RULES*/
-img[alt=logo] {
-   height: 10%;
-   position: absolute;
-   top: -1px;
-   left: -1px;
-   border: none;
+table {
+   border-collapse: collapse;
 }
 
-img[alt=full-pic] {
-    height: auto;
-    width: auto;
-    position: relative;
-    top: -25px;
-    max-width: 70%;
+table, th, td {
+    border: 1px solid #282828;
 }
 
-img[alt=fuller-pic] {
-    height: auto;
-    width: auto;
-    position: relative;
-    top: -25px;
-    max-width: 95%;
+th, td {
+   padding: 0.5em;
 }
 
-img[alt=borderless-pic] {
-    border: none;
+thead {
+   background-color: lightgrey;
 }
