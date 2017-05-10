@@ -110,6 +110,7 @@ template: sininen-palkki
 
 template: sininen-palkki
 class: clientList
+
 # Clients-näkymän värikoodaus
 
 - Clientin rekisteröinnin tila näkyy värikoodattuna pallona
