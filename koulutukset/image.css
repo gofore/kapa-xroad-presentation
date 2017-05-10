@@ -21,6 +21,10 @@ img[alt=lipaportit-right] {
    max-width: 55%;
 }
 
+img[alt=hallinta] {
+   width: 80%;
+}
+
 img[alt=full-pic] {
     height: auto;
     width: auto;

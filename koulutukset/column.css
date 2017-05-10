@@ -11,3 +11,7 @@
 /* Split-55 rule */
 .split-55 .column:first-of-type {width: 54%}
 .split-55 .column:last-of-type {width: 44%}
+
+/* Split-70 rule */
+.split-70 .column:first-of-type {width: 69%}
+.split-70 .column:last-of-type {width: 29%}
