@@ -25,6 +25,23 @@ img[alt=hallinta] {
    width: 80%;
 }
 
+
+img[alt=status] {
+   width: 50%;
+}
+
+img[alt=toiminnan-esim] {
+   width: 75%;
+}
+
+img[alt=palveluvayla] {
+   width: 85%;
+}
+
+img[alt=client-status] {
+   width: 16px;
+}
+
 img[alt=full-pic] {
     height: auto;
     width: auto;
