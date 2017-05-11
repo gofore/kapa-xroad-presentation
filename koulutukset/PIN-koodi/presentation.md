@@ -39,7 +39,7 @@ class: split-55
 - PIN-koodi täytyy säilyttää turvallisessa paikassa.
    - Palauttaminen ei ole mahdollista
 ]
-.column[![PIN-koodi](../images/PIN-koodi.png)]
+.column[![PIN-koodi](../images/pin-koodi.png)]
 
 ---
 

@@ -25,7 +25,7 @@ template: header
 
 template: header
 
-# Adminkäyttöliittymä
+# Admin-käyttöliittymä
 
 ---
 
@@ -35,9 +35,9 @@ template: sininen-palkki
 
 - Liityntäpalvelin näyttää admin-käyttöliittymässä viestejä virhetilanteissa
 - Yleisimmät virheviestit ovat
-   - Global configuration is expired: globaalin konfiguraation hakemisessa on jokin ongelma
+   - Global configuration is expired: keskuskonfiguraation hakemisessa on jokin ongelma
    - Please enter softtoken PIN: oikeaa PIN-koodia ei ole syötetty, avaimia ei voi käyttää
-![globalconf-pinkoodi](../images/globalconf-pinkoodi-error.png)
+![globalconf-pinkoodi](../images/Globalconf-pinkoodi-error.png)
 
 ---
 
@@ -51,9 +51,9 @@ class: split-40
 - Keltainen = Odottaa testausta
 - Punainen = Vika
 - Testit
-   - Global konfiguraation haku
+   - Keskuskonfiguraation haku
    - Yhteys aikaleimapalvelimelle
-   - Yhteys OCSP responderiin
+   - Yhteys OCSP-responderiin
 ]
 
 .column[
@@ -70,9 +70,9 @@ template: sininen-palkki
 
 1.  Palvelin on juuri käynnistetty
    - PIN-koodia ei ole syötetty
-   - Keskuspalvelin ei ole saatavilla, globaalia konfiguraatioita ei voida hakea
+   - Keskuspalvelin ei ole saatavilla, keskuskonfiguraatioita ei voida hakea
    - Yhtään viestiä ei olla välitetty (eikä aikaleimattu)
-2. Keskuspalvelin ja globaali konfiguraatio ovat kunnossa
+2. Keskuspalvelin ja keskuskonfiguraatio ovat kunnossa
    - Viestejä ei olla välitetty (eikä aikaleimattu)
 3. Viestejä on välitetty ja aikaleimattu
 
@@ -153,7 +153,7 @@ template: sininen-palkki
 
 template: sininen-palkki
 
-# Esimerkki: Ei yhteyttä OCSP-responteriin
+# Esimerkki: Ei yhteyttä OCSP-responderiin
 
 ![ei-oscp](../images/ei-yhteytta-ocsp.png)
 
@@ -180,7 +180,7 @@ template: sininen-palkki
 - Kaikissa liityntäpalvelimissa on sisäänrakennettuna muutamia ns. metapalveluja, joita voidaan käyttää myös toimintakunnon testaamiseen
 - Metapalveluita voi kutsua kuka tahansa, niitä ei luviteta erikseen
 - Kaikilla liityntäpalvelimilla on yhteys keskuspalvelimen liityntäpalvelimeen → esimerkiksi sen metapalvelua voidaan kutsua kun halutaan testata toimivatko tietoliikenneyhteydet
-- Älä kuitenkaan kuormita keskus-lipoja turhaan! Ei sovellu jatkuvaan automaattiseen valvontaan
+- Älä kuitenkaan kuormita keskusliityntäpalvelimia turhaan! Ei sovellu jatkuvaan automaattiseen valvontaan
 
 ---
 
@@ -313,7 +313,7 @@ template: sininen-palkki
 - Portit kuuntelevat?
 - Tekstilokeihin tulostuu tavaraa
 - Tekstilokeissa ei “epänormaaleja” virheilmoituksia
-- Monitorointi
+- Valvonta
 
 ---
 template: header

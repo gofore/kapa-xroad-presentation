@@ -28,8 +28,8 @@ template: sininen-palkki
 
 # /tmp ja NOEXEC
 
-- Mikäli /tmp sijaitsee tiedostojärjestelmässä joka on mountattu NOEXEC lippu päällä, admin käyttöliittymä ei toimi.
-![NOEXEC-lippu](../images/NOEXEC-lippu.png)
+- Mikäli /tmp sijaitsee tiedostojärjestelmässä, joka on mountattu NOEXEC-lippu päällä, admin käyttöliittymä ei toimi.
+![NOEXEC-lippu](../images/Noexec-lippu.png)
 
 ---
 

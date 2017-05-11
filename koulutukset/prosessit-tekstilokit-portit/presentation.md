@@ -61,7 +61,7 @@ template: sininen-palkki
 
 template: sininen-palkki
 
-# Tesktilokit
+# Tekstilokit
 
 * Lokeihin kirjoitettavaa dataa voidaan säätää eritasoiseksi
    * `ERROR`, `WARN`, `INFO` (oletuksena), `DEBUG`, `OFF`

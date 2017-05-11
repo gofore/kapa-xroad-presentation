@@ -45,9 +45,9 @@ template: sininen-palkki
     * Tietoturvapäivityksiä
     * Uusia käyttöä tukevia toiminnallisuuksia  
 
-* Levytilan valvonta on tärkeää, mikä kannattaa kiinnittää huomiota jo asennusvaiheessa
-    * Levytila täyttyy jos arkistoituja tietoja ei siirretä talteen tai poisteta
-    * Käyttäjämäärät ratkaisevia mm. levytilan ja alustakoneen (tai koneiden) valinnassa.
+* Levytilan valvonta on tärkeää ja siihen kannattaa kiinnittää huomiota jo asennusvaiheessa
+    * Levytila täyttyy jos arkistoituja tietoja ei poisteta tai siirretä muualle talteen liityntäpalvelimelta
+    * Käyttäjämäärät ratkaisevia mm. levytilan ja palvelinkapasiteetin valinnassa.
 
 ---
 
@@ -57,7 +57,7 @@ template: sininen-palkki
 
 * KUVA TÄHÄN
 
-* Lokeihin kirjoitettavaa dataa voidaan säätää eritasoiseksi, esim. DEBUG, INFO ja OFF.
+* Lokeihin kirjoitettavan datan yksityiskohtien määrää voidaan asettaa eri tasoisiksi esim. DEBUG, INFO ja OFF.
 
 ---
 
@@ -73,8 +73,10 @@ template: sininen-palkki
 
 # Levytila
 
-* Kaikki viestit (header aina, ja body konfiguroituna), sekä niiden tiivisteet ja allekirjoitukset tallentuvat paikalliseen
+* Kaikki viestit, sekä niiden tiivisteet ja allekirjoitukset tallentuvat paikalliseen
 tietokantaan jälkikäteistä todennusta varten.
+    * SOAP-viestin header-osuus tallennetaan aina
+    * SOAP-viestin body-osuutta ei oletuksena tallenneta, mutta se on konfiguroitavissa
 * Kannasta niitä puretaan zip-tiedostoihin ajastetusti /var/lib/xroad -hakemistoon
 * Zip-tiedostot täyttävät levyn, ellei niitä siirretä muualle tai poisteta
 * Liitetiedostot tallentuvat väliaikaisesti liityntäpalvelimen levylle
