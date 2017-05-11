@@ -65,16 +65,16 @@ template: sininen-palkki
 # Palauttaminen komentoriviltä
 
 - Ajetaan xroad-käyttäjänä
-   -  In order to restore configuration, the following command should be used:
+   -  Konfiguraation palauttaminen
    ```bash
-   $ /usr/share/xroad/scripts/restpre_xroad_proxy_configuration.sh -s <security server ID> -f <path
+   $ /usr/share/xroad/scripts/restore_xroad_proxy_configuration.sh -s <security server ID> -f <path
    ```
-   - For example (all on one line):
+   - Esimerkiksi
    ```bash
    $ /usr/share/xroad/scripts/restore_xroad_proxy_configuration.sh -s AA/GOV/TS1OWNER/TS1 \
    -f /var/lib/xroad/backup/conf_backup_20140703-110438.tar
    ```
-   - If its abosolutely necessary to restore the system from a backup made on a different security server, the forced mode of the restore commmand can be used with the -F option. For example (all on one line):
+   - Konfiguraation palauttaminen toiselle liityntäpalvelimelle kuin alkuperäinen -F vivulla
    ```bash
    $ /usr/share/xroad/scripts/restore_xroad_proxy_configuration.sh -F \
    -f /var/lib/xroad/backup/conf_backup_20140703-110438.tar

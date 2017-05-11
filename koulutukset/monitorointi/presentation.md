@@ -19,7 +19,7 @@ class: center, middle, sininen
 ---
 
 template: header
-# Monitorointi
+# Valvonta
 
 ---
 
@@ -28,10 +28,8 @@ template: sininen-palkki
 # Liityntäpalvelimen valvontaominaisuudet
 
 - Ympäristön valvonta
-   - Environmental monitoring
    - Muistin määrä, levytila, OS, ohjelmistoversiot…
 - Toiminnan valvonta (ei vielä käytössä)
-   - Operational monitoring
    - Välitettyjen kutsujen lukumäärä, onnistuneet / epäonnistuneet palvelukutsut, keskimääräinen suoritusaika...
 
 ---
@@ -40,18 +38,19 @@ template: sininen-palkki
 
 # Ympäristön valvonta: miksi?
 
-- Isoveli valvoo ja auttaa
+- Palveluväylän ylläpidolle
    - Pakolliset päivitykset asennettu?
    - Tuki ongelmatilanteissa
-- Oman palveluväylä-kokoonpanon valvonta
-- Tilastot käytetyistä muiden tarjoamista palveluista
-   - SLA
+- Liityntäpalvelimen ylläpitäjälle
+   - Oman palveluväylä-kokoonpanon valvonta
+   - Tilastot käytetyistä muiden tarjoamista palveluista
+     - SLA
 
 ---
 
 template: sininen-palkki
 
-# Ympäristön valvonta – liityntäpalvelimen toteutus
+# Ympäristön valvonta – toteutus
 
 ![](../images/ympariston-valvonta-lipa.png)
 

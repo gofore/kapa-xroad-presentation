@@ -28,8 +28,8 @@ template: sininen-palkki
 # Käyttäjäryhmät
 
 - Liityntäpalvelimen asennuksen yhteydessä luodaan automaattisesti yksi admin-käyttäjä, jolla on oikeudet kaikkiin admin-käyttöliittymän toimintoihin
-- Käyttöoikeudet rakentuvat osista hienojakoisemmin, ja tietylle käyttäjälle voidaan antaa vain tarvittavat oikeudet
-- Käyttäjäryhmät on kuvattu tarkemmin liityntäpalvelimen user guidessa ([SS User Guide](https://github.com/vrk-kpa/X-Road/blob/develop/doc/Manuals/ug-ss_x-road_6_security_server_user_guide.md#21-user-roles)), ja samassa dokumentissa on kerrottu mihin toimintoihin kullakin ryhmällä on oikeus
+- Käyttöoikeudet rakentuvat osista hienojakoisemmin ja tietylle käyttäjälle voidaan antaa vain tarvittavat oikeudet
+- Käyttäjäryhmät on kuvattu tarkemmin liityntäpalvelimen user guidessa ([SS User Guide](https://github.com/vrk-kpa/X-Road/blob/develop/doc/Manuals/ug-ss_x-road_6_security_server_user_guide.md#21-user-roles)) ja samassa dokumentissa on kerrottu mihin toimintoihin kullakin ryhmällä on oikeus
 
 ---
 

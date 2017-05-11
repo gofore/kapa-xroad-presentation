@@ -38,8 +38,8 @@ template: sininen-palkki
 
 # Varmenteiden uusiminen (1/2)
 
-- Luodaan luoduille palvelin- ja allekirjoitusavaimille uudet CSR:ät – muuten edetään samaan tyyliin kuin normaalissa CSR:n luomisessa
-   - Suosikaa PEM formaattia CSRissä (VRK Varmennepalvelun toive)
+- Luodaan luoduille palvelin- ja allekirjoitusavaimille uudet allekirjoituspyynnöt – muuten edetään samaan tyyliin kuin normaalissa allekirjoituspyynnön luomisessa
+   - Suosikaa PEM formaattia allekirjoituspyynnöissä (VRK Varmennepalvelun toive)
    - Lähetetään ylläpidolle allekirjoitettavaksi: palveluvayla@palveluvayla.fi
 ![luominen](../images/varmenteen-luominen.png)
 
@@ -90,7 +90,7 @@ template: sininen-palkki
 
 template: sininen-palkki
 
-# Miksi asiakaan tarvitsee toimia välikätenä?
+# Miksi asiakkaan tarvitsee toimia välikätenä?
 
 - Varmenteiden tilaamiseen tarvitaan toimija, jolla on organisaation nimenkirjoitusoikeus
 - Mikäli varmenteita tilaa henkilö, jolla ei ole organisaation nimenkirjoitusoikeutta, tulee olla valtakirja. Valtakirjaksi riittää yleensä yksinkertainen

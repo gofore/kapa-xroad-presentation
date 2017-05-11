@@ -46,7 +46,7 @@ template: sininen-palkki
 - Globaalin konfiguraation haku epäonnistui
 - Kertoo osoitteet, mistä hakua yritettiin
 - Verkko & palomuurit?
-- Liityntäpalvelin on käyttökelpoinen 72 tunnin ajan
+- Liityntäpalvelin on kuitenkin käyttökelpoinen keskuskonfiguraation voimassaolon ajan (esim. 72 tuntia)
 
 ---
 
@@ -136,7 +136,7 @@ template: sininen-palkki
    2016-04-20 11:46:32,430 [Proxy-akka.actor.default-dispatcher-81] ERROR e.r.x.p.messagelog.TimestamperWorker - Timestamper failed for message records [<record id>, ...]: Failed to get time stamp from any time-stamping providers
 ```
 --
-* Tämä ja muutamat muut “timestamper failed” virheet voivat johtua siitä että yhteyttä timestamperiin ei saatu
+* Tämä ja muutamat muut “timestamper failed” virheet voivat johtua siitä, että yhteyttä aikaleimapalveluun ei saatu
 * Verkko & palomuurit?
 * Viestinvälitys lakkaa 30 minuutin kuluessa
 
@@ -174,7 +174,7 @@ template: sininen-palkki
 # signer.log
 
 * OutdatedGlobalConf: /etc/xroad/globalconf/FI/private-params.xml is too old
-* Globaali konfiguraatio on liian vanha
+* Keskuskonfiguraatio on liian vanha
 * Konfiguraation haku ei toimi
 * Onko yhteys keskuspalvelimeen OK? → configuration_client.log
 
@@ -189,7 +189,7 @@ template: sininen-palkki
 org.bouncycastle.cert.ocsp.OCSPException: Unable to get valid OCSP response from any responders
 ```
 --
-* Tämä ja muutamat muut virheet “OCSP” avaisanalla voivat johtua siitä että yhteyttä OCSP responderiin ei saatu
+* Tämä ja muutamat muut virheet “OCSP” avainsanalla voivat johtua siitä, että yhteyttä OCSP-responderiin ei saatu
 * Verkko & palomuurit?
 
 ---
@@ -202,7 +202,7 @@ template: header
 
 template: sininen-palkki
 
-# Producer-lipan sign-cert ei kunnossa 1
+# Producer-liityntäpalvelimen allekirjoitusvarmenne ei kunnossa 1/3
 
 ```log
 2017-04-07 13:47:16,891 [qtp2129844134-1885] ERROR e.r.x.p.c.AbstractClientProxyHandler - Request processing error
@@ -218,7 +218,7 @@ ee.ria.xroad.common.CodedException$Fault: Server.ServerProxy.ServiceFailed.Canno
 
 template: sininen-palkki
 
-# Producer-lipan sign-cert ei kunnossa 2
+# Producer-liityntäpalvelimen allekirjoitusvarmenne ei kunnossa 2/3
 
 ```log
 2017-04-07 13:47:16,889 [qtp1369468094-1375] ERROR e.r.x.p.s.ServerProxyHandler - Request processing error (a3e009b2-ea7a-4678-809f-aaa2292477ea)
@@ -233,7 +233,7 @@ ee.ria.xroad.common.CodedException: Server.ServerProxy.ServiceFailed.CannotCreat
 
 template: sininen-palkki
 
-# Producer-lipan sign-cert ei kunnossa 3
+# Producer-liityntäpalvelimen allekirjoitusvarmenne ei kunnossa 3/3
 
 ```log
 2017-04-07 13:47:16,872 ERROR [Signer-akka.actor.default-dispatcher-3] e.r.x.s.p.AbstractRequestHandler - Error in request handler

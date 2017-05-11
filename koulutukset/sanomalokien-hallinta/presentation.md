@@ -43,7 +43,7 @@ template: sininen-palkki
 #  Liityntäpalvelimen levytila
 
 * Liityntäpalvelimella levytilaa tarvitsevat pääasiassa:
-   * Tekstilogit (`var/log/xroad`, ei siivota automaattisesti)
+   * Tekstilokit (`var/log/xroad`, ei siivota automaattisesti)
    * Tietokanta (`messagelog` -taulu, automaattisesti siivotaan oletuksena yli 30 päivää vanhat)
    * Arkistoidut sanomalokit (`/var/lib/xroad`, ei siivota automaattisesti)
    * SOAP-viestin liitetiedostot (sanoma käsittelyn ajan)
@@ -87,7 +87,7 @@ template: sininen-palkki
 
 # Arkistoitujen sanomalokien siirto
 
-* Esimerkki ubuntulta siirrettäessä voidaan käyttää rsync-tiedonsiirtoa.
+* Esimerkki Ubuntulta siirrettäessä voidaan käyttää rsync-tiedonsiirtoa.
    * Luodaan skripti arkistoitujen sanomalokien siirtoon
    ```bash
       #!/bin/bash
