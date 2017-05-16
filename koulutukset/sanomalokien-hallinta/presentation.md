@@ -77,7 +77,7 @@ template: sininen-palkki
 
 |Parametri           |Oletusarvo          |Selite                             |
 |:-------------------|:-------------------|:----------------------------------|
-|archive-interval    |0 0 0/6 1/1 * ? *   |CRON lauseke, joka määrittää kuinka usein aikaleimattuja viestejä arkistoidaan|
+|archive-interval    |0 0 0/6 1/1 \* ? \* |CRON lauseke, joka määrittää kuinka usein aikaleimattuja viestejä arkistoidaan|
 |archive-path        |/var/lib/xroad      |Polku, mihin arkistoidut tiedostot tallennetaan|
 |keep-records-for    |30                  |Montako päivää aikaleimattuja ja arkistoituja sanomia pidetään tietokannassa|
 
@@ -87,19 +87,17 @@ template: sininen-palkki
 
 # Arkistoitujen sanomalokien siirto
 
-* Esimerkki Ubuntulta siirrettäessä voidaan käyttää rsync-tiedonsiirtoa.
+* Siirto voidaan tehdään esimerkiksi rsyncillä, tässä ohje Ubuntulle.
    * Luodaan skripti arkistoitujen sanomalokien siirtoon
    ```bash
       #!/bin/bash
       rsync --remove-source-files -a --include='*.zip' --exclude='*' /var/lib/xroad/ \
       kayttajatunnus@kohdearkistonosoite.com:/polku/arkistointi/kansioon
    ```
-* Lisätään skripti liityntäpalvelimen ajettavaksi aina arkistotiedostoa muodostettaessa asettamalla viestilokin parametri local.ini-tiedostoon
-
+   * Lisätään skripti liityntäpalvelimen ajettavaksi aina arkistotiedostoa muodostettaessa asettamalla viestilokin parametri local.ini-tiedostoon
    ```yml
       [message-log]
       archive-transfer-command=/usr/share/xroad/scripts/archive-rsync-transporter.sh
-
    ```
 ---
 

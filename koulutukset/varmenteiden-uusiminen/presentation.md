@@ -52,7 +52,7 @@ class: split-70
 
 .column[
 - TÄRKEÄÄ! Antakaa uusien varmenteiden olla rinnakkain aktiivisina vanhenemassa olevien varmenteiden kanssa ainakin vuorokauden ajan
-   - Status pitäisi olla registered ja OCSP response good
+   - Status pitäisi olla *registered* ja OCSP response *good*
    - Tieto uudesta varmenteesta ehtii leviämään palveluväyläympäristön sisällä
 - Sen jälkeen vanhenevat varmenteet voi disabloida ja poistaa
 ]

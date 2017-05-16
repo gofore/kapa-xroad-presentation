@@ -113,3 +113,7 @@ thead {
    padding: 0 2em;
    list-style:disc;
 }
+
+.smaller-code-font code {
+   font-size: 0.60em;
+}

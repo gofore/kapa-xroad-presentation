@@ -30,7 +30,7 @@ template: sininen-palkki
 - configuration_client.log
 - proxy.log
 - signer.log
-- “operointiohjeet” listaavat muutamia valvottavia virhetilanteita  
+- [operointiohjeet](https://confluence.csc.fi/display/KAPAJULKHAL/Security+Server+Log+Monitoring) listaavat muutamia valvottavia virhetilanteita  
 
 ---
 
@@ -70,12 +70,12 @@ template: sininen-palkki
 
 # Server.ClientProxy.NetworkError
 
-* "Server.ClientProxy" - Component
+* **Server.ClientProxy** = Component
    * Client
    * Server.ClientProxy
    * Server.ServerProxy
    * Signer
-* "NetworkError" - Error Code
+* **NetworkError** = Error Code
 
 ---
 
@@ -202,7 +202,9 @@ template: header
 
 template: sininen-palkki
 
-# Producer-liityntäpalvelimen allekirjoitusvarmenne ei kunnossa 1/3
+# Allekirjoitusvarmenne ei kunnossa 1/3
+
+* Producer-liityntäpalvelimella allekirjoitusvarmenneongelma.
 
 ```log
 2017-04-07 13:47:16,891 [qtp2129844134-1885] ERROR e.r.x.p.c.AbstractClientProxyHandler - Request processing error
@@ -218,7 +220,9 @@ ee.ria.xroad.common.CodedException$Fault: Server.ServerProxy.ServiceFailed.Canno
 
 template: sininen-palkki
 
-# Producer-liityntäpalvelimen allekirjoitusvarmenne ei kunnossa 2/3
+# Allekirjoitusvarmenne ei kunnossa 2/3
+
+* Producer-liityntäpalvelimen allekirjoitusvarmenneongelma.
 
 ```log
 2017-04-07 13:47:16,889 [qtp1369468094-1375] ERROR e.r.x.p.s.ServerProxyHandler - Request processing error (a3e009b2-ea7a-4678-809f-aaa2292477ea)
@@ -233,7 +237,9 @@ ee.ria.xroad.common.CodedException: Server.ServerProxy.ServiceFailed.CannotCreat
 
 template: sininen-palkki
 
-# Producer-liityntäpalvelimen allekirjoitusvarmenne ei kunnossa 3/3
+# Allekirjoitusvarmenne ei kunnossa 3/3
+
+* Producer-liityntäpalvelimen allekirjoitusvarmenneongelma.
 
 ```log
 2017-04-07 13:47:16,872 ERROR [Signer-akka.actor.default-dispatcher-3] e.r.x.s.p.AbstractRequestHandler - Error in request handler

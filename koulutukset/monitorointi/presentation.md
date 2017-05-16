@@ -82,9 +82,9 @@ template: sininen-palkki
 
 # Ympäristön valvonta, käyttö
 
-- Metapalvelu getSecurityServerMetrics
+- Metapalvelu **getSecurityServerMetrics**
 - Eli normaali X-Road SOAP sanoma
-- Poikkeuksena elementti server, jota käytetään normaalien client ja service headerien lisäksi
+- Poikkeuksena elementti **server**, jota käytetään normaalien **client** ja **service** headerien lisäksi
 
 ---
 

@@ -54,11 +54,11 @@ template: sininen-palkki
 cd /home/xroad
 mkdir tmp
 chown xroad:xroad tmp
-chmod 700
+chmod 700 tmp
 ```
 - /etc/xroad/services/local-conf:
 ```yml
-JETTY_PARAMS=" $JETTY_PARAMS -DJava.io.tmpdir=/home/xroad/tmp/ "
+JETTY_PARAMS=" $JETTY_PARAMS -Djava.io.tmpdir=/home/xroad/tmp/ "
 ```
 
 ---

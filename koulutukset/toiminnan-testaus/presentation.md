@@ -190,7 +190,7 @@ template: sininen-palkki
 
 - listClients
 - listCentralServices
-- listMethods
+- *listMethods*
    - Listaus tietyn organisaation tarjoamista palveluista
    - Normaali X-Road SOAP protokollakutsu
    - Kutsu välitetään organisaation liityntäpalvelimelle
@@ -206,7 +206,7 @@ template: sininen-palkki
 
 - Voit testata viestinvälitystä keskuspalvelimen liityntäpalvelimelle (satunnaisesti)
 - Keskuspalvelimen liityntäpalvelimen koordinaatit löytyvät esimerkiksi
-- /etc/xroad/globalconf/<instance id>/private-params.xml -tiedostosta
+- /etc/xroad/globalconf/&#60;instance id&#62;/private-params.xml -tiedostosta
 
 ```xml
 <managementRequestServiceProviderId ns2:objectType="SUBSYSTEM">
@@ -244,6 +244,42 @@ $ curl --header "content-type: text/xml" http://localhost -d @request.xml
 ---
 
 template: valkoinen
+class: smaller-code-font
+
+Vastaus curl -komentoon:
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:iden="http://x-road.eu/xsd/identifiers" xmlns:xro="http://x-road.eu/xsd/xroad.xsd" xmlns:xro1="http://xroad.vrk.fi/xroad-catalog-lister">
+   <soapenv:Header>
+      <xro:protocolVersion>4.x</xro:protocolVersion>
+      <xro:id>dummy-ID11234</xro:id>
+      <xro:requestHash algorithmId="http://www.w3.org/2001/04/xmlenc#sha512">8lSx+Q4c8QpT6n4OgtN1EvxVYWOjHckHjBTq3N5qhIaZGCaSyq/JVo7wIUoWzabp7Ea1h+zRYY7iUcNC3uN49A==</xro:requestHash>
+      <xro:userId>dummy-EE1234567890</xro:userId>
+      <xro:client iden:objectType="SUBSYSTEM">
+         <iden:xRoadInstance>CADEV</iden:xRoadInstance>
+         <iden:memberClass>GOV</iden:memberClass>
+         <iden:memberCode>2077-1</iden:memberCode>
+         <iden:subsystemCode>SS2077</iden:subsystemCode>
+      </xro:client>
+      <xro:service iden:objectType="SERVICE">
+         <iden:xRoadInstance>CADEV</iden:xRoadInstance>
+         <iden:memberClass>GOV</iden:memberClass>
+         <iden:memberCode>1234510-926</iden:memberCode>
+         <iden:subsystemCode>GUITEST26</iden:subsystemCode>
+         <iden:serviceCode>listMethods</iden:serviceCode>
+      </xro:service>
+   </soapenv:Header>
+   <soapenv:Body>
+      <xro:listMethodsResponse>
+         <xro:service iden:objectType="SERVICE">
+            <iden:xRoadInstance>CADEV</iden:xRoadInstance>
+            <iden:memberClass>GOV</iden:memberClass>
+         ...
+```
+
+---
+
+template: valkoinen
+class: smaller-code-font
 
 Request.xml -file
 ```xml

@@ -55,17 +55,15 @@ template: sininen-palkki
 
 # Liityntäpalvelimen prosessit
 
-* KUVA TÄHÄN
+![lipan-prosessit](../images/lipan-prosessit.png)
 
 * Lokeihin kirjoitettavan datan yksityiskohtien määrää voidaan asettaa eri tasoisiksi esim. DEBUG, INFO ja OFF.
 
 ---
 
-template: sininen-palkki
+template: valkoinen
 
-# Portit
-
-* KUVA TÄHÄN
+![lipan-portit](../images/lipan-portit.png)
 
 ---
 

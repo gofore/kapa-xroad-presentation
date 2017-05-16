@@ -67,7 +67,7 @@ template: sininen-palkki
 - Ajetaan xroad-käyttäjänä
    -  Konfiguraation palauttaminen
    ```bash
-   $ /usr/share/xroad/scripts/restore_xroad_proxy_configuration.sh -s <security server ID> -f <path
+   $ /usr/share/xroad/scripts/restore_xroad_proxy_configuration.sh -s <security server ID> -f <path + filename>
    ```
    - Esimerkiksi
    ```bash
