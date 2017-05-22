@@ -102,3 +102,18 @@ th, td {
 thead {
    background-color: lightgrey;
 }
+
+/* Special list rule for toiminnan testaus */
+.clientList ul li ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.clientList ul li ul li ul {
+   padding: 0 2em;
+   list-style:disc;
+}
+
+.smaller-code-font code {
+   font-size: 0.60em;
+}

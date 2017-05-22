@@ -39,7 +39,7 @@ class: split-55
 - PIN-koodi täytyy säilyttää turvallisessa paikassa.
    - Palauttaminen ei ole mahdollista
 ]
-.column[![PIN-koodi](../images/PIN-koodi.png)]
+.column[![PIN-koodi](../images/pin-koodi.png)]
 
 ---
 
@@ -49,7 +49,7 @@ template: sininen-palkki
 
 - PIN-koodi syötettävä aina palvelimen uudelleenkäynnistyksen jälkeen uudelleen
 - Sanomien lähettäminen epäonnistuu, jos koodin aktivointi on jäänyt tekemättä.
-- Sanomat palauttavat faultcodea, joita voi tarkastella proxy-lokista
+   - Sanomat palauttavat faultcodea, joita voi tarkastella proxy-lokista
 - Kutsujan liityntäpalvelimella PIN-koodi syöttämättä:
 ![PIN-koodi-syöttämättä](../images/PIN-koodi-lipa-syottamatta.png)
 - Tarjoajan liityntäpalvelimella PIN-koodi syöttämättä:

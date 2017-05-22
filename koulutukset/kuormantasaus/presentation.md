@@ -55,11 +55,9 @@ template: sininen-palkki
 # Sisäänrakennettu HA-tuki
 
 * X-Roadissa on sisäänrakennettuna yksinkertainen korkean saatavuuden mekanismi
-* Jos sama palvelu* on rekisteröity usealle liityntäpalvelimelle, käytetään sitä liityntäpalvelinta joka vastaa nopeiten
+* Jos sama palvelu (sama organisaatio & alijärjestelmä & palvelu) on rekisteröity usealle liityntäpalvelimelle, käytetään sitä liityntäpalvelinta joka vastaa nopeiten
 
-(*) Sama palvelu = sama organisaatio & alijärjestelmä & palvelu
-
-.center[![small-image](../images/internal-load-balancer.png)]
+![](../images/internal-load-balancer.png)
 ---
 
 template: sininen-palkki
@@ -77,7 +75,7 @@ template: sininen-palkki
 
 # Sisäänrakennettu HA-tuki: ongelma
 
-* Jos tällaiseen klusteriin kuuluu liityntäpalvelimet SS1, SS2, SS3, jokin niistä on
+* Jos tällaiseen klusteriin kuuluu liityntäpalvelimet [SS1, SS2, SS3], jokin niistä on
 yleensä nopein vastaamaan pyyntöihin ("lyhyimmät piuhat")
 * Yksi klusterin nodeista vastaa kaikkiin pyyntöihin, toiset laiskottelevat
 * Ei ole juuri hyödyksi suorituskyvyn suhteen
@@ -88,7 +86,7 @@ template: sininen-palkki
 
 # Sisäänrakennettu HA-tuki: muutoksia
 * Versiossa 6.7.13 parannettiin toimintaa luotettavammaksi (verkko)virhetilanteissa
-* Versiossa 6.9 parannetaan yhteysavausten nopeutta ja luotettavuutta, nopeutetaan toipumista verkko-ongelmista, ja parannetaan konfiguroitavuutta
+* Versiossa 6.9 parannetaan yhteysavausten nopeutta ja luotettavuutta, nopeutetaan toipumista verkko-ongelmista ja parannetaan konfiguroitavuutta
 * H2/2017 tulossa parannuksia, joilla mahdollisesti saadaan sisäänrakennettu HA myös jakamaan kuormaa tehokkaammin
 
 ---
@@ -108,7 +106,7 @@ template: sininen-palkki
 * Kaikki palvelevat aktiivisesti asiakkaita (ei hot standby)
 * Ulkomaailma näkee nämä yhtenä nodena
 * Yksi node on konfiguraation suhteen master, muut slaveja
-* Väylässä on siis virallisesti yksi liityntäpalvelin, ja epäviralliset slave nodet teeskentelevät olevansa se
+* Väylässä on siis virallisesti yksi liityntäpalvelin (master) ja klusterin muut nodet teeskentelevät olevansa se
 
 ---
 
@@ -123,8 +121,8 @@ template: sininen-palkki
 * Slaveilla
   * On read-only käyttäjä
   * Tai ei ole ollenkaan käyttöliittymää
-* Healthcheck
-* XRoad-sovellukseen on tehty muutoksia jotka mahdollistavat klusteroinnin
+* Health check
+* XRoad-sovellukseen on tehty muutoksia, jotka mahdollistavat klusteroinnin
 
 ---
 
@@ -136,5 +134,5 @@ template: sininen-palkki
    * Asennus käsin https://github.com/vrk-kpa/X-Road/blob/PVAYLADEV-698-feature-load-balancer-install-instructions/doc/Manuals/LoadBalancing/ig-xlb_x-road_external_load_balancer_installation_guide.md
 * Varsinainen kuormanjakaja (ELB, F5, nginx...) out of scope
 * Konfigurointi tehdään master nodelle
-* Konfiguraatiomuutokset päivittyvät master -> slavet viiveellä
-   * -> klusteri hetken epäkonsistentti
+* Konfiguraatiomuutokset päivittyvät masteriin, josta ne päivittyvät slave-koneille viiveellä
+   * klusteri hetken epäkonsistentti

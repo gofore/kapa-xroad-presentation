@@ -20,7 +20,7 @@ class: valkoinen
 
 template: header
 
-# Liityntäpalvelimen admin-toimintoja
+# Hallintakäyttöliittymän toiminnot
 
 ---
 template: sininen-palkki
@@ -40,9 +40,9 @@ template: sininen-palkki
 # Konfiguraatioankkuri
 
 * XML-tiedosto, jonka palveluväylän ylläpitäjät toimittavat liittyjälle liityntäpalvelinasennuksen alussa
-* Kytkee liityntäpalvelimen osaksi tiettyä ympäristö palveluväyläympäristöä (FI-DEV, FI-TEST, FI)
+* Kytkee liityntäpalvelimen osaksi tiettyä palveluväyläympäristöä (FI-DEV, FI-TEST, FI)
 * Konfiguraatioankkuri sisältää tiedon ympäristön keskuspalvelimen sijainnista ja varmenteesta.
-    * Näillä tiedoilla liityntäpalvelin pystyy hakemaan kaikille yhteisen keskuskonfiguraation,
+    * Näillä tiedoilla liityntäpalvelin pystyy hakemaan kaikille yhteisen keskuskonfiguraation
 ja saa tiedon siitä mitä muita liityntä- ja keskuspalvelimia on olemassa.
 
 .center[![small-image](../images/konfiguraatioankkuri.png)]
@@ -57,7 +57,7 @@ template: sininen-palkki
 * Pidä PIN-koodisi tallessa! Tunnistevälineen (software token) tallentamien avainten tai
 PIN-koodin palauttaminen ei ole mahdollista.
 * Koodin syöttäminen vaaditaan aina palvelimen uudelleenkäynnistyksen jälkeen
-    * Ilman koodin aktivointia sanomaliikenne ei ole mahdollista
+    * Ilman PIN-koodin aktivointia sanomaliikenne ei ole mahdollista
 
 .center[![small-image](../images/pin-koodi.png)]
 
@@ -67,9 +67,9 @@ template: sininen-palkki
 
 # Avaimet ja varmenteet
 
-* Allekirjoitus- ja autentikointivarmenteiden hallinta
+* Allekirjoitus- ja palvelinvarmenteiden hallinta
     * Varmenteiden allekirjoituspyyntöjen luonti
-    * Allekirjoitettujen varmenteiden asettaminen (import)
+    * Allekirjoitettujen varmenteiden tuonti (import)
 
 .center[![medium-image](../images/varmenteet.png)]
 
@@ -105,8 +105,8 @@ template: sininen-palkki
 
 # Yhteyksien hallinta
 
-* HTTPS yhteyksien käyttö varten käyttöliittymään voidaan lisätä luotettuja TLS-varmenteita
-    * TLS:n käyttö määritellään WSDL-rajapinnan lisäämisen yhtedessä
+* HTTPS-yhteyksien käyttöä varten käyttöliittymään voidaan lisätä luotettuja TLS-varmenteita
+    * TLS:n käyttö määritellään WSDL-rajapinnan lisäämisen yhteydessä
 * Security Server Certificate -kohdasta voidaan hakea liityntäpalvelimen oma palvelinvarmenne
 
 .center[![small-image](../images/internal-certificates.png)]
