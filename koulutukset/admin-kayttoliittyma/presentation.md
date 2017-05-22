@@ -20,7 +20,7 @@ class: valkoinen
 
 template: header
 
-# Liityntäpalvelimen admin-toimintoja
+# Hallintakäyttöliittymän toiminnot
 
 ---
 template: sininen-palkki
@@ -106,7 +106,7 @@ template: sininen-palkki
 # Yhteyksien hallinta
 
 * HTTPS-yhteyksien käyttöä varten käyttöliittymään voidaan lisätä luotettuja TLS-varmenteita
-    * TLS:n käyttö määritellään WSDL-rajapinnan lisäämisen yhtedessä
+    * TLS:n käyttö määritellään WSDL-rajapinnan lisäämisen yhteydessä
 * Security Server Certificate -kohdasta voidaan hakea liityntäpalvelimen oma palvelinvarmenne
 
 .center[![small-image](../images/internal-certificates.png)]

@@ -134,5 +134,5 @@ template: sininen-palkki
    * Asennus käsin https://github.com/vrk-kpa/X-Road/blob/PVAYLADEV-698-feature-load-balancer-install-instructions/doc/Manuals/LoadBalancing/ig-xlb_x-road_external_load_balancer_installation_guide.md
 * Varsinainen kuormanjakaja (ELB, F5, nginx...) out of scope
 * Konfigurointi tehdään master nodelle
-* Konfiguraatiomuutokset päivittyvät master -> slavet viiveellä
-   * -> klusteri hetken epäkonsistentti
+* Konfiguraatiomuutokset päivittyvät masteriin, josta ne päivittyvät slave-koneille viiveellä
+   * klusteri hetken epäkonsistentti

@@ -66,7 +66,7 @@ template: sininen-palkki
 * Lokeihin kirjoitettavaa dataa voidaan säätää eritasoiseksi
    * `ERROR`, `WARN`, `INFO` (oletuksena), `DEBUG`, `OFF`
 * Ei ole tehty selvitystä kuinka paljon käytännössä vaikutusta tallennuskapasiteetin käyttöön
-* Lokitason muuttaminen hakemistossa /`etc/xroad/conf.d logback.xml`-tiedostoille tai `local.ini`-tiedostoon (= pysyvä vaihtoehto, joka ei ylikirjoitu softan päivittyessä)
+* Lokitason muuttaminen hakemistossa /`etc/xroad/conf.d logback.xml`-tiedostoille tai `local.ini`-tiedostoon (joista jälkimmäinen on pysyvä vaihtoehto, joka ei ylikirjoitu softan päivittyessä)
    * Esim. proxy-logback.xml:
    ```xml
       <logger name="ee.ria.xroad" level="INFO" />

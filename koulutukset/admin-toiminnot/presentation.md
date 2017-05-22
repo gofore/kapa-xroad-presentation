@@ -20,7 +20,7 @@ class: valkoinen
 
 template: header
 
-# Liityntäpalvelimen ylläpito ja valvonta
+# Admin-toiminnot - Liityntäpalvelimen ylläpito ja valvonta
 
 ---
 
