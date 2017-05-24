@@ -74,7 +74,7 @@ template: sininen-palkki
 
 template: sininen-palkki
 
-# Varmenteiden hallinta FI-TEST- ja FI-ympäristöissä (osa 1)
+# Varmenteiden hallinta (osa 1)
 
 ![hallinta](../images/varmenteiden-hallinta-1.png)
 
@@ -82,7 +82,7 @@ template: sininen-palkki
 
 template: sininen-palkki
 
-# Varmenteiden hallinta FI-TEST- ja FI-ympäristöissä (osa 2)
+# Varmenteiden hallinta (osa 2)
 
 ![hallinta](../images/varmenteiden-hallinta-2.png)
 
