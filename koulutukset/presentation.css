@@ -103,6 +103,11 @@ thead {
    background-color: lightgrey;
 }
 
+strong {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
 /* Special list rule for toiminnan testaus */
 .clientList ul li ul {
    list-style-type: none;
