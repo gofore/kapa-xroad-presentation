@@ -138,7 +138,7 @@ template: sininen-palkki
 --
 * Tämä ja muutamat muut “timestamper failed” virheet voivat johtua siitä, että yhteyttä aikaleimapalveluun ei saatu
 * Verkko & palomuurit?
-* Viestinvälitys lakkaa 30 minuutin kuluessa
+* Viestinvälitys lakkaa 4 tunnin kuluessa
 
 ---
 
